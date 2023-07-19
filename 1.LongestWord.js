@@ -3,23 +3,25 @@
 
 /*
 use split the tsr 
-then we have a long str = 0
+then we have a longstr = ""
 
-go for loop an check to she str length 
-now check long < str length
+go for loop an check to the str length 
+crnt str.length > longstr.lenth 
+
 */
 
-let FindLongWord = (str) => {
-  let stringg = str.split(" ");
-  let long = 0;
-  let longestWord = " ";
-  for (let i = 0; i < stringg.length; i++) {
-    if (long < stringg[i].length) {
-      long = stringg[i].length;
-      longestWord = stringg[i];
+function find(str) {
+  let sp = str.split(" ");
+
+  let longstr = 0;
+  let store = "";
+  for (i = 0; i < sp.length; i++) {
+    if (sp[i].length > longstr) {
+      longstr = sp[i].length;
+      store = sp[i];
     }
   }
-  return longestWord;
-};
+  return store;
+}
 
-console.log(FindLongWord("My name is ankit jain & i'm from morena"));
+console.log(find(" My name is ankit jain & i'm from morena"));

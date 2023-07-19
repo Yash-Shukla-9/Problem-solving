@@ -17,7 +17,6 @@ function find(str) {
   let store = "";
   for (i = 0; i < sp.length; i++) {
     if (sp[i].length > longstr) {
-      longstr = sp[i].length;
       store = sp[i];
     }
   }

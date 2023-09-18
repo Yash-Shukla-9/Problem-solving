@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redo And Undo</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .input {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .btn {
+        display: flex;
+        gap: 10px;
+      }
+
+      input {
+        width: 500px;
+        height: 50px;
+        border-radius: 2px 0 15px 15px;
+      }
+      .bttn {
+        width: 100px;
+        padding: 6px 0;
+        border: none;
+        border-radius: 5px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="input">
+      <p>Undo Redo</p>
+      <input type="text" id="in" />
+      <div class="btn">
+        <button class="undo bttn">Undo</button>
+        <button class="redo bttn">Redo</button>
+      </div>
+    </div>
+    <script src="./Inque&Deque.js" async></script>
+  </body>
+</html>
